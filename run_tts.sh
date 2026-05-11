@@ -28,9 +28,9 @@ if [ $? -ne 0 ]; then
 fi
 
 echo ""
-echo "Starting Markdown to Speech Converter (Streamlit)..."
-echo "The app will open in your browser at http://localhost:8501"
+echo "Starting Markdown to Speech Converter..."
+echo "The app will open in your browser at http://localhost:5000"
 echo "Press Ctrl+C to stop the application"
 echo ""
 
-streamlit run app.py
+flask --app api/index run --port 5000
